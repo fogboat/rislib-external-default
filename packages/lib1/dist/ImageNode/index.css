@@ -1,0 +1,68 @@
+.image-node {
+  text-align: center;
+  margin: 8px 0;
+  display: inline-block;
+  position: relative;
+}
+
+.image-node img {
+  border-radius: 4px;
+  max-width: 100%;
+  height: auto;
+  transition: border-color .2s;
+}
+
+.image-node.selected img {
+  border: 2px solid #007bff;
+  box-shadow: 0 0 0 2px #007bff40;
+}
+
+.image-alt-text {
+  color: #666;
+  text-align: center;
+  margin-top: 4px;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.image-alt-edit {
+  z-index: 1000;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-width: 200px;
+  padding: 8px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 8px #0000001a;
+}
+
+.image-alt-edit input {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.image-alt-edit button {
+  cursor: pointer;
+  background: #f8f9fa;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  margin-right: 4px;
+  padding: 2px 8px;
+  font-size: 11px;
+}
+
+.image-alt-edit button:hover {
+  background: #e9ecef;
+}
+
+.image-alt-edit button:last-child {
+  margin-right: 0;
+}
+
